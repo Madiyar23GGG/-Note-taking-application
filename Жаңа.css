@@ -1,0 +1,80 @@
+/* Сброс отступов и базовые стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Контейнер */
+#container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Заголовок */
+#container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Текстовое поле */
+#text {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+}
+
+#text:focus {
+  border-color: #74ebd5;
+  outline: none;
+}
+
+/* Кнопка */
+.button1 {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button1:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  #text {
+    height: 120px;
+  }
+
+  .button1 {
+    width: 100%;
+  }
+}
